@@ -7,7 +7,7 @@
 set $mod Mod4
 
 # Font for window titles / title bars
-font pango:Misc Ohsnap 12
+font pango:FiraCode Nerd Font 12
 
 # workspaces
 set $ws1 1
