@@ -207,9 +207,9 @@ bindsym Print exec flameshot gui
 bindsym Shift+Print exec flameshot gui
 
 # Set power-manager and volume control
-bindsym $mod+Shift+Page_Up exec --no-startup-id amixer -c 0 -q set Master 2dB+ unmute
-bindsym $mod+Shift+Page_Down exec --no-startup-id amixer -c 0 -q set Master 2db- unmute
-bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset Master 5%+ unmute
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 5%- unmute
+bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle
 
 ###########################################################
 # Start Up commands and applications
