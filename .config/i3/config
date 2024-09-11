@@ -219,3 +219,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # picom
 #exec --no-startup-id picom
+
+# auth dialog for disk mount
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
