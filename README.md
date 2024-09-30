@@ -8,12 +8,13 @@ https://github.com/brainfucksec/dotfiles
 
 | Component           | Application                                              |
 | ------------------- | -------------------------------------------------------- |
-| OS                  | Debian Linux (12 Stable - Bookworm)                      |
-| Shell               | zsh                                                      |
+| OS                  | Parrot Security 6.1 (lorikeet)                           |
+| Shell               | zsh with oh my zsh                                       |
 | Terminal Emulator   | Alacritty                                                |
-| Desktop Environment | XFCE (first time for WM, so i can't remove it as backup) |
 | Window Manager      | i3                                                       |
 | Bar                 | polybar                                                  |
 | Program Launcher    | rofi                                                     |
 | Themes              | Nordic                                                   |
 | Icons               | Papirus                                                  |
+| File Manager        | pcmanfm                                                  |
+| Image Viewer        | gThumb                                                   |
