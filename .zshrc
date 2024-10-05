@@ -71,6 +71,7 @@ ZSH_THEME="jonathan"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 export FZF_BASE="/usr/bin/fzf"
+export FZF_DEFAULT_OPTS="--preview 'batcat --style=numbers --color=always {}'"
 plugins=(fzf zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
