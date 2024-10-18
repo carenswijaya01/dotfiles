@@ -219,7 +219,7 @@ exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # picom
-#exec --no-startup-id picom
+exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
 
 # auth dialog for disk mount
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
