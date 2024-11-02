@@ -16,5 +16,6 @@ https://github.com/brainfucksec/dotfiles
 | Program Launcher    | rofi                                                     |
 | Themes              | Nordic                                                   |
 | Icons               | Papirus                                                  |
-| File Manager        | pcmanfm                                                  |
+| File Manager        | Thunar File Manager                                      |
 | Image Viewer        | gThumb                                                   |
+| Text Editor         | neovim with lazyvim                                      |
