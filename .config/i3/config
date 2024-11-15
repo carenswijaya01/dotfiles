@@ -45,7 +45,7 @@ client.urgent            #535965 #535965 #b2bbcc  #535965   #535965
 default_orientation horizontal
 
 # Set windows border
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 0
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -53,12 +53,13 @@ for_window [urgent=latest] focus
 # Gaps settings
 gaps inner 16
 gaps outer 4
+gaps bottom 30
 
 # Only enable gaps on a workspace when there is at least one container
 #smart_gaps on
 
 # Activate smart borders (always)
-#smart_borders on
+# smart_borders on
 
 # Back and forth workplace switching
 workspace_auto_back_and_forth yes
@@ -82,7 +83,8 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id rofi -show drun
+#bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -203,8 +205,8 @@ bindsym Print exec flameshot gui
 bindsym Shift+Print exec flameshot gui
 
 # Set power-manager and volume control
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset Master 5%+ unmute
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 5%- unmute
+bindsym $mod+Page_Up exec --no-startup-id amixer sset Master 5%+ unmute
+bindsym $mod+Page_Down exec --no-startup-id amixer sset Master 5%- unmute
 bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle
 
 ###########################################################
@@ -212,9 +214,10 @@ bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle
 ###########################################################
 
 # Set wallpaper
-#exec_always --no-startup-id xwallpaper --daemon --zoom ~/.config/xwallpaper/cube_minimalism_dark_1920x1080.png
+#exec_always --no-startup-id xwallpaper --daemon --zoom ~/Pictures/catMachup.jpg
 exec_always --no-startup-id nitrogen --restore
 
+exec_always --no-startup-id xrdb -load $HOME/.Xresources
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
@@ -223,3 +226,6 @@ exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
 
 # auth dialog for disk mount
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+
+# dunst notification-daemon
+exec --no-startup-id dunst
