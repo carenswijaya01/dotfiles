@@ -9,10 +9,6 @@ https://codeberg.org/cizordj/i3-themer
 some dotfiles reference from:
 https://github.com/brainfucksec/dotfiles
 
-v1 = [Stirling-PDF v0.23.0](https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v0.23.0)
-v1.1 = [Stirling-PDF v0.26.1](https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v0.26.1)
-v1.2 = [Stirling-PDF v0.29.0](https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v0.29.0)
-
 ### Setup:
 
 | Component         | Application                                                    |
