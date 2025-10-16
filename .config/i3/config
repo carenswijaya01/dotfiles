@@ -33,9 +33,10 @@ focus_follows_mouse no
 
 # Class                  border  backgr  text     indicator child_border
 client.focused           #535965 #535965 #b2bbcc  #535965   #535965
-client.focused_inactive  #31353f #31353f #1f2329  #31353f   #31353f
-client.unfocused         #31353f #31353f #1f2329  #31353f   #31353f
-client.urgent            #535965 #535965 #b2bbcc  #535965   #535965
+client.focused_inactive  #31353f #31353f #b2bbcc  #31353f   #31353f
+client.unfocused         #535965 #31353f #b2bbcc  #31353f   #31353f
+client.urgent            #ff0000 #535965 #b2bbcc  #535965   #535965
+
 
 ###########################################################
 # Windows style
@@ -45,21 +46,21 @@ client.urgent            #535965 #535965 #b2bbcc  #535965   #535965
 default_orientation horizontal
 
 # Set windows border
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 2
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
 # Gaps settings
-gaps inner 16
-gaps outer 4
-gaps bottom 30
+gaps inner 10
+gaps outer 0
+gaps top 30
 
 # Only enable gaps on a workspace when there is at least one container
-#smart_gaps on
+# smart_gaps on
 
 # Activate smart borders (always)
-# smart_borders on
+smart_borders on
 
 # Back and forth workplace switching
 workspace_auto_back_and_forth yes
@@ -229,3 +230,8 @@ exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agen
 
 # dunst notification-daemon
 exec --no-startup-id dunst
+
+# # disable auto screen off
+# exec --no-startup-id xset -dpms
+# exec --no-startup-id xset s off
+# exec --no-startup-id xset s noblank
