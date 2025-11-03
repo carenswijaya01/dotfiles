@@ -204,10 +204,14 @@ mode "resize" {
 # User defined keys
 bindsym Print exec flameshot gui
 bindsym Shift+Print exec flameshot gui
+bindsym $mod+Shift+s exec flameshot gui
 
 # Set power-manager and volume control
 bindsym $mod+Page_Up exec --no-startup-id amixer sset Master 5%+ unmute
 bindsym $mod+Page_Down exec --no-startup-id amixer sset Master 5%- unmute
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset Master 5%+ unmute
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 5%- unmute
 bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle
 
 ###########################################################
@@ -223,7 +227,7 @@ exec_always --no-startup-id xrdb -load $HOME/.Xresources
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # picom
-exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
+# exec --no-startup-id picom -b --config ~/.config/picom/picom.conf
 
 # auth dialog for disk mount
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
