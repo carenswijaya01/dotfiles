@@ -1,11 +1,19 @@
-/**
- * rofi theme - rofi-dark
- */
+/**********************************************************
+
+Rofi Theme: OneDark
+Description: Simple theme for rofi launcher with OneDark colors
+Author: brainf+ck
+Source: https://github.com/brainfucksec/dotfiles
+Last Update: Sun Feb  2 07:47:35 AM UTC 2025
+
+***********************************************************/
 
 * {
     background: #1f2329;
+    background-alt: #4998da;
     background-color: @background;
     foreground: #b2bbcc;
+    foreground-alt: #4e545f;
 
     normal-background: @background;
     normal-foreground: @foreground;
@@ -13,7 +21,7 @@
     alternate-normal-background: @background;
     alternate-normal-foreground: @foreground;
 
-    selected-normal-background: #535965;
+    selected-normal-background: @background-alt;
     selected-normal-foreground: @background;
     spacing: 2;
 }
@@ -21,8 +29,8 @@
 #window {
     background-color: @background;
     border: 3;
-    border-color: @selected-normal-background;
-    padding: 2ch;
+    border-color: @foreground-alt;
+    padding: 1.5ch;
     width: 490;
     height: 290;
 }
@@ -87,7 +95,7 @@
 }
 
 #inputbar {
-    spacing: 0;
+    spacing: 2;
     text-color: @normal-foreground;
     padding: 4px;
 }
@@ -101,4 +109,3 @@
     spacing: 0;
     text-color: @normal-foreground;
 }
-

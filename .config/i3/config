@@ -7,7 +7,7 @@
 set $mod Mod4
 
 # Font for window titles / title bars
-font pango:FiraCode Nerd Font 12
+font pango:FiraCode Nerd Font 10
 
 # workspaces
 set $ws1 1 󰞷
@@ -52,20 +52,20 @@ for_window [class="^.*"] border pixel 2
 for_window [urgent=latest] focus
 
 # Gaps settings
-gaps inner 10
-gaps outer 0
-gaps top 30
+# gaps inner 1
+# gaps outer 0
+gaps top 28
 
 # Only enable gaps on a workspace when there is at least one container
 # smart_gaps on
 
 # Activate smart borders (always)
-smart_borders on
+# smart_borders on
 
 # Back and forth workplace switching
 workspace_auto_back_and_forth yes
 
-hide_edge_borders both
+# hide_edge_borders both
 
 ###########################################################
 # Keybindings
@@ -84,8 +84,8 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-#bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
+bindsym $mod+d exec --no-startup-id rofi -show drun
+# bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
