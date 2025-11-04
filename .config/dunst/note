@@ -1,0 +1,4 @@
+# untuk test
+pkill dunst
+dunst -print &
+notify-send "Test" "Debug mode test"
