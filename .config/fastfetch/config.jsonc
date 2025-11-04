@@ -77,6 +77,12 @@
       "key": "󰝚 ",
       "keyColor": "34"
     },
+    {
+      "type": "command",
+      "text": "sudo virsh list --name | paste -sd ' ' -",
+      "key": "󰟀 ",
+      "keyColor": "34"
+    },
     "break",
     {
       "type": "custom",
