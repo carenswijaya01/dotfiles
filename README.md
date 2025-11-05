@@ -1,10 +1,10 @@
 Screenshots:
 ![alt text](img/image.png)
-![alt text](img/image-1.png)
-![alt text](img/image-2.png)
 
 i3 initial setup:
 https://codeberg.org/cizordj/i3-themer
+
+    sudo apt install alacritty i3 i3lock-fancy polybar nitrogen fonts-font-awesome fonts-firacode rofi xdg-utils sensible-utils alsa-utils dunst flameshot libx11-dev libxcomposite-dev libxdamage-dev libxfixes-dev libxrender-dev pkg-config make gcc git fastfetch
 
 some dotfiles reference from:
 https://github.com/brainfucksec/dotfiles
@@ -24,3 +24,28 @@ https://github.com/brainfucksec/dotfiles
 | Icons             | Papirus                        |
 | File Manager      | Thunar File Manager            |
 | Image Viewer      | gThumb                         |
+
+### Notes:
+
+    ln -s ~/Documents/dotfiles/.config/alacritty alacritty
+    ln -s ~/Documents/dotfiles/.config/dunst dunst
+    ln -s ~/Documents/dotfiles/.config/fastfetch fastfetch
+    ln -s ~/Documents/dotfiles/.config/gtk-3.0 gtk-3.0
+    ln -s ~/Documents/dotfiles/.config/i3 i3
+    ln -s ~/Documents/dotfiles/.config/polybar polybar
+    ln -s ~/Documents/dotfiles/.config/rofi rofi
+
+    # before themes:
+    sudo apt install sassc gnome-themes-extra gtk2-engines-murrine
+
+    ln -sf ~/Documents/dotfiles/.fonts ~/.fonts
+    ln -sf ~/Documents/dotfiles/.themes ~/.themes
+    ln -sf ~/Documents/dotfiles/.icons ~/.icons
+    ln -sf ~/Documents/dotfiles/.Xresources ~/.Xresources
+    ln -sf ~/Documents/dotfiles/.zshrc ~/.zshrc
+
+    # after apply theme (for flatpak only):
+    sudo flatpak override --filesystem=$HOME/.themes
+    sudo flatpak override --filesystem=$HOME/.icons
+    flatpak override --user --filesystem=xdg-config/gtk-4.0
+    sudo flatpak override --filesystem=xdg-config/gtk-4.0
