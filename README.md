@@ -27,13 +27,14 @@ https://github.com/brainfucksec/dotfiles
 
 ### Notes:
 
-    ln -s ~/Documents/dotfiles/.config/alacritty alacritty
-    ln -s ~/Documents/dotfiles/.config/dunst dunst
-    ln -s ~/Documents/dotfiles/.config/fastfetch fastfetch
-    ln -s ~/Documents/dotfiles/.config/gtk-3.0 gtk-3.0
-    ln -s ~/Documents/dotfiles/.config/i3 i3
-    ln -s ~/Documents/dotfiles/.config/polybar polybar
-    ln -s ~/Documents/dotfiles/.config/rofi rofi
+    rm -rf ~/.config/alacritty ~/.config/dunst ~/.config/fastfetch ~/.config/gtk-3.0 ~/.config/i3 ~/.config/polybar ~/.config/rofi
+    ln -s ~/Documents/dotfiles/.config/alacritty ~/.config/alacritty
+    ln -s ~/Documents/dotfiles/.config/dunst ~/.config/dunst
+    ln -s ~/Documents/dotfiles/.config/fastfetch ~/.config/fastfetch
+    ln -s ~/Documents/dotfiles/.config/gtk-3.0 ~/.config/gtk-3.0
+    ln -s ~/Documents/dotfiles/.config/i3 ~/.config/i3
+    ln -s ~/Documents/dotfiles/.config/polybar ~/.config/polybar
+    ln -s ~/Documents/dotfiles/.config/rofi ~/.config/rofi
 
     # before themes:
     sudo apt install sassc gnome-themes-extra gtk2-engines-murrine
