@@ -107,13 +107,10 @@ source $ZSH/oh-my-zsh.sh
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# bin for go tools
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/Tools/go
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-
-# manual build (python, make, etc) tools bin
-export PATH="$PATH:$HOME/Tools/bin"
+# Load extensions if they exist
+if [ -f ~/.zshrc.local ]; then
+  source ~/.zshrc.local
+fi
 
 setopt autocd              # change directory just by typing its name
 setopt interactivecomments # allow comments in interactive mode

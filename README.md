@@ -13,7 +13,7 @@ https://github.com/brainfucksec/dotfiles
 
 | Component         | Application                    |
 | ----------------- | ------------------------------ |
-| OS                | Parrot Security 6.1 (lorikeet) |
+| OS                | Parrot Security 6.4 (lorikeet) |
 | Shell             | zsh with oh my zsh             |
 | Compositor        | fastcompmgr                    |
 | Terminal Emulator | Alacritty                      |
