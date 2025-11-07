@@ -23,8 +23,8 @@ sudo apt update && sudo apt full-upgrade -y
 echo -e "${CYAN}>>> Installing system packages...${RESET}"
 sudo apt install -y \
   build-essential curl wget git fastfetch htop rsync vim fzf zsh \
-  xorg i3 i3lock-fancy polybar nitrogen rofi dunst flameshot picom \
-  lightdm policykit-1-gnome network-manager pavucontrol pulseaudio \
+  xorg i3 i3lock-fancy polybar nitrogen rofi dunst flameshot \
+  lightdm lxqt-policykit network-manager pavucontrol pulseaudio \
   thunar thunar-archive-plugin xarchiver mousepad ristretto lxappearance \
   alacritty ffmpeg mpv python3 python3-pip cargo make gcc \
   libx11-dev libxcomposite-dev libxdamage-dev libxfixes-dev libxrender-dev pkg-config \
@@ -105,12 +105,15 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 echo -e "${CYAN}>>> Installing Flatpak applications...${RESET}"
 flatpak install -y flathub org.telegram.desktop
 flatpak install -y flathub org.onlyoffice.desktopeditors
+flatpak install -y flathub org.mozilla.Thunderbird
 
 # --- Dotfiles linking ---
 DOTDIR="$HOME/Documents/dotfiles"
 
 if [ -d "$DOTDIR" ]; then
   echo -e "${CYAN}>>> Linking dotfiles from $DOTDIR...${RESET}"
+
+  mkdir -p ~/.config
 
   rm -rf ~/.config/alacritty ~/.config/dunst ~/.config/fastfetch ~/.config/gtk-3.0 \
          ~/.config/i3 ~/.config/polybar ~/.config/rofi

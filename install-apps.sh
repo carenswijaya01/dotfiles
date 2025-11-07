@@ -19,14 +19,19 @@ mkdir -p "$APP_DIR" "$DESKTOP_DIR"
 echo -e "${CYAN}>>> Updating package lists...${RESET}"
 sudo apt update
 
-# --- APT / Repo installable apps ---
-echo -e "${CYAN}>>> Installing apps via apt/repo...${RESET}"
-sudo apt install -y \
-  dbeaver-ce \
-  thunderbird \
-  zoom \
-  anydesk \
-  rustdesk
+# --- DBeaver setup ---
+echo -e "${CYAN}>>> Installing DBeaver...${RESET}"
+wget -qO /tmp/DBeaver.deb https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
+sudo apt install -y /tmp/DBeaver.deb
+rm /tmp/DBeaver.deb
+echo -e "${GREEN}>>> DBeaver installed.${RESET}"
+
+# --- Zoom setup ---
+echo -e "${CYAN}>>> Installing Zoom...${RESET}"
+wget -qO /tmp/Zoom.deb https://cdn.zoom.us/prod/6.6.6.5306/zoom_amd64.deb
+sudo apt install -y /tmp/Zoom.deb
+rm /tmp/Zoom.deb
+echo -e "${GREEN}>>> Zoom installed.${RESET}"
 
 # --- VS Code setup ---
 echo -e "${CYAN}>>> Installing Visual Studio Code...${RESET}"

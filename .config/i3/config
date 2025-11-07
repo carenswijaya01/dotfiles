@@ -230,7 +230,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id fastcompmgr -o 0.4 -r 12 -c -C
 
 # auth dialog for disk mount
-exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id /usr/libexec/lxqt-policykit-agent
 
 # dunst notification-daemon
 exec --no-startup-id dunst
