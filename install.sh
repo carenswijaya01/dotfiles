@@ -24,7 +24,7 @@ echo -e "${CYAN}>>> Installing system packages...${RESET}"
 sudo apt install -y \
   build-essential curl wget git fastfetch htop rsync vim fzf zsh \
   xorg i3 i3lock-fancy polybar nitrogen rofi dunst flameshot \
-  lightdm lxqt-policykit network-manager pavucontrol pulseaudio \
+  lightdm lxqt-policykit network-manager pavucontrol pulseaudio alsa-utils \
   thunar thunar-archive-plugin xarchiver mousepad ristretto lxappearance \
   alacritty ffmpeg mpv python3 python3-pip cargo make gcc \
   libx11-dev libxcomposite-dev libxdamage-dev libxfixes-dev libxrender-dev pkg-config \
