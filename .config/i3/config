@@ -51,6 +51,9 @@ for_window [class="^.*"] border pixel 2
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
+for_window [title="Open File"] fullscreen
+for_window [title="Open Folder"] fullscreen
+
 # Gaps settings
 # gaps inner 1
 # gaps outer 0
