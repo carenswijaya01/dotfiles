@@ -181,10 +181,10 @@ bindsym $mod+a focus parent
 bindsym $mod+r mode "resize"
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
+        # Pressing left will shrink the window's width.
+        # Pressing right will grow the window's width.
+        # Pressing up will shrink the window's height.
+        # Pressing down will grow the window's height.
         bindsym j resize shrink width 5 px or 5 ppt
         bindsym k resize grow height 5 px or 5 ppt
         bindsym l resize shrink height 5 px or 5 ppt
@@ -210,12 +210,17 @@ bindsym Shift+Print exec flameshot gui
 bindsym $mod+Shift+s exec flameshot gui
 
 # Set power-manager and volume control
-bindsym $mod+Page_Up exec --no-startup-id amixer sset Master 5%+ unmute
-bindsym $mod+Page_Down exec --no-startup-id amixer sset Master 5%- unmute
+# bindsym $mod+Page_Up exec --no-startup-id amixer sset Master 5%+ unmute
+# bindsym $mod+Page_Down exec --no-startup-id amixer sset Master 5%- unmute
+bindsym $mod+Page_Up exec --no-startup-id ~/.config/i3/volume-notif.sh volume_up
+bindsym $mod+Page_Down exec --no-startup-id ~/.config/i3/volume-notif.sh volume_down
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset Master 5%+ unmute
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 5%- unmute
-bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle
+# bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset Master 5%+ unmute
+# bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 5%- unmute
+# bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/volume-notif.sh volume_up
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/volume-notif.sh volume_down
+bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/volume-notif.sh volume_mute
 
 ###########################################################
 # Start Up commands and applications
