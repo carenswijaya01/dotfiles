@@ -35,7 +35,7 @@ sudo apt install -y \
   fonts-freefont-ttf fonts-opensymbol gnome-themes-extra gtk2-engines-murrine \
   virt-manager qemu-system libvirt-daemon-system libvirt-clients bridge-utils \
   gnome-keyring udisks2 gvfs-backends gvfs-fuse fonts-noto-color-emoji \
-  flatpak ca-certificates playerctl libnotify-bin
+  flatpak ca-certificates playerctl libnotify-bin cava
 
 # --- Enable system services ---
 echo -e "${CYAN}>>> Enabling essential services...${RESET}"
