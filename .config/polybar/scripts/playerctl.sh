@@ -31,8 +31,8 @@ if [ -z $title ] && [ -z $artist ]; then
 else
     # Print polybar widget string
     if [ $show_controls == "yes" ]; then
-        echo "%{F#$icon_color}$player_icon%{F-} $(head -c 30 <<< $title) - $(head -c 20 <<< $artist) %{F#$icon_color}%{A1:playerctl previous:}%{A} %{A1:playerctl play-pause:}$play_pause_icon%{A} %{A1:playerctl next:}%{A}%{F-}"
+        echo "%{F#$icon_color}$player_icon%{F-} $(head -c 20 <<< $title) - $(head -c 20 <<< $artist) %{F#$icon_color}%{A1:playerctl previous:}%{A} %{A1:playerctl play-pause:}$play_pause_icon%{A} %{A1:playerctl next:}%{A}%{F-}"
     else
-        echo "%{F#$icon_color}$player_icon%{F-} $(head -c 30 <<< $title) - $(head -c 20 <<< $artist)%{F-}"
+        echo "%{F#$icon_color}$player_icon%{F-} $(head -c 20 <<< $title) - $(head -c 20 <<< $artist)%{F-}"
     fi
 fi
