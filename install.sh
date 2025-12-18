@@ -131,6 +131,7 @@ if [ -d "$DOTDIR" ]; then
   ln -sf "$DOTDIR/.icons" ~/.icons
   ln -sf "$DOTDIR/.Xresources" ~/.Xresources
   ln -sf "$DOTDIR/.zshrc" ~/.zshrc
+  ln -sf "$DOTDIR/.p10k.zsh" ~/.p10k.zsh
 else
   echo -e "${YELLOW}Dotfiles not found at $DOTDIR — skipping link.${RESET}"
 fi
