@@ -14,4 +14,5 @@ HWMON_PATH=$(for d in /sys/class/hwmon/hwmon*/; do
 done)
 
 # Launch polybar
-HWMON_PATH="$HWMON_PATH" polybar mybar &
+HWMON_PATH="$HWMON_PATH" polybar top &
+HWMON_PATH="$HWMON_PATH" polybar bottom &
