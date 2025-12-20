@@ -213,23 +213,21 @@ bindsym $mod+Shift+s exec flameshot gui
 # Set power-manager and volume control
 # bindsym $mod+Page_Up exec --no-startup-id amixer sset Master 5%+ unmute
 # bindsym $mod+Page_Down exec --no-startup-id amixer sset Master 5%- unmute
-bindsym $mod+Page_Up exec --no-startup-id ~/.config/i3/volume-notif.sh volume_up
-bindsym $mod+Page_Down exec --no-startup-id ~/.config/i3/volume-notif.sh volume_down
+bindsym $mod+Page_Up exec --no-startup-id ~/.config/i3/scripts/volume-notif.sh volume_up
+bindsym $mod+Page_Down exec --no-startup-id ~/.config/i3/scripts/volume-notif.sh volume_down
 
 # bindsym XF86AudioRaiseVolume exec --no-startup-id amixer sset Master 5%+ unmute
 # bindsym XF86AudioLowerVolume exec --no-startup-id amixer sset Master 5%- unmute
 # bindsym XF86AudioMute exec --no-startup-id amixer sset Master toggle
-bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/volume-notif.sh volume_up
-bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/volume-notif.sh volume_down
-bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/volume-notif.sh volume_mute
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume-notif.sh volume_up
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume-notif.sh volume_down
+bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume-notif.sh volume_mute
+
+bindsym $mod+shift+w exec ~/.config/i3/scripts/wallpaper-selector.sh
 
 ###########################################################
 # Start Up commands and applications
 ###########################################################
-
-# Set wallpaper
-#exec_always --no-startup-id xwallpaper --daemon --zoom ~/Pictures/catMachup.jpg
-exec_always --no-startup-id nitrogen --restore
 
 exec_always --no-startup-id xrdb -load $HOME/.Xresources
 # polybar
@@ -248,3 +246,8 @@ exec --no-startup-id dunst
 # exec --no-startup-id xset -dpms
 # exec --no-startup-id xset s off
 # exec --no-startup-id xset s noblank
+
+# Set wallpaper
+# exec_always --no-startup-id xwallpaper --daemon --zoom ~/Pictures/catMachup.jpg
+# exec_always --no-startup-id nitrogen --restore
+exec --no-startup-id feh --bg-scale "/home/carens/Documents/dotfiles/wallpapers/3cj76ruxlmif1.jpeg"

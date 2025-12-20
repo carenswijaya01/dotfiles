@@ -1,7 +1,11 @@
-#!/usr/bin/env bash
-##########
+#!/bin/bash
+
+############
 # Polycava #
-##########
+############
+
+# Idea by: https://github.com/Bromax14/Dotfiles-i3WM-Gruvbox-Minimal
+
 cava -p ~/.config/cava/config_raw | while IFS=';' read -r -a values; do
     bars=""
     for num in "${values[@]}"; do

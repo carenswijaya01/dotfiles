@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
 # ------------------------------------------------------------------
 # Function Key Control Wrapper Script for Volume & Brightness
 # Works with sxhkd, acpid, or similar hotkey daemons.
