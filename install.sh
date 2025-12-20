@@ -23,7 +23,7 @@ sudo apt update && sudo apt full-upgrade -y
 echo -e "${CYAN}>>> Installing system packages...${RESET}"
 sudo apt install -y \
   build-essential curl wget git fastfetch htop rsync vim fzf zsh \
-  xorg i3 i3lock-fancy polybar nitrogen rofi dunst flameshot \
+  xorg i3 i3lock-fancy polybar feh rofi dunst flameshot \
   lightdm mate-polkit network-manager pavucontrol pulseaudio alsa-utils \
   thunar thunar-archive-plugin xarchiver mousepad ristretto lxappearance \
   alacritty ffmpeg mpv python3 python3-pip cargo make gcc \
