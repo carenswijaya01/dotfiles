@@ -115,10 +115,11 @@ if [ -d "$DOTDIR" ]; then
 
   mkdir -p ~/.config
 
-  rm -rf ~/.config/alacritty ~/.config/dunst ~/.config/fastfetch ~/.config/gtk-3.0 \
+  rm -rf ~/.config/alacritty ~/.config/cava ~/.config/dunst ~/.config/fastfetch ~/.config/gtk-3.0 \
          ~/.config/i3 ~/.config/polybar ~/.config/rofi
 
   ln -s "$DOTDIR/.config/alacritty" ~/.config/alacritty
+  ln -s "$DOTDIR/.config/cava" ~/.config/cava
   ln -s "$DOTDIR/.config/dunst" ~/.config/dunst
   ln -s "$DOTDIR/.config/fastfetch" ~/.config/fastfetch
   ln -s "$DOTDIR/.config/gtk-3.0" ~/.config/gtk-3.0
