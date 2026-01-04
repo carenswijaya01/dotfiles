@@ -27,3 +27,5 @@ https://github.com/brainfucksec/dotfiles
     sudo flatpak override --filesystem=$HOME/.icons
     flatpak override --user --filesystem=xdg-config/gtk-4.0
     sudo flatpak override --filesystem=xdg-config/gtk-4.0
+
+It is somehow better to install NVIDIA from CUDA (https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Debian&target_version=13&target_type=deb_network), especially for Wayland. As I was writing this, I got bored with i3 and chose GNOME Wayland instead.
