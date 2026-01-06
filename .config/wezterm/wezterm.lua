@@ -105,6 +105,6 @@ return {
 
   -- Other
   -- hide_tab_bar_if_only_one_tab = true,
-  front_end = "WebGpu",
+  -- front_end = "WebGpu",
   enable_wayland = true,
 }
