@@ -69,7 +69,7 @@ stage {
 }
 
 .quick-settings {
-  border-image: url("assets/menu_x1.svg") 30 30 30 30;
+  border-image: url("assets/menu_x2.svg") 30 30 30 30;
 }
 
 .ripple-pointer-location {
